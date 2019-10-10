@@ -1,0 +1,7 @@
+{% for aws_account in aws_accounts|sort(attribute='profile_name') %}
+[profile {{ aws_account.profile_name }}]
+source_profile = {{ aws_account.source_profile }}
+role_arn = arn:aws:iam::{{ aws_account.account_id }}:role/{{ aws_account.role_name}}
+region = {{ aws_account.region }}
+
+{% endfor %}

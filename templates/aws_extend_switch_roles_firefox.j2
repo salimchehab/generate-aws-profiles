@@ -1,0 +1,8 @@
+{% for aws_account in aws_accounts|sort(attribute='profile_name') %}
+[{{ aws_account.profile_name }}]
+aws_account_id = {{ aws_account.account_id }}
+role_name = {{ aws_account.role_name}}
+region = {{ aws_account.region }}
+color = {{ aws_account.color }}
+
+{% endfor %}

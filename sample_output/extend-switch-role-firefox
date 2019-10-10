@@ -1,0 +1,24 @@
+[something-dev]
+aws_account_id = 123456789012
+role_name = dev
+region = eu-central-1
+color = 008040
+
+[something-prod]
+aws_account_id = 123456789012
+role_name = ops
+region = eu-central-1
+color = 000000
+
+[something-test]
+aws_account_id = 123456789012
+role_name = account-admin
+region = eu-central-1
+color = ff8040
+
+[something-test-ops]
+aws_account_id = 123456789012
+role_name = account-ops
+region = eu-central-1
+color = ff8040
+
